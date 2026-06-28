@@ -1,0 +1,3 @@
+[install]
+# Skip package version age verification
+minimumReleaseAge = 0
