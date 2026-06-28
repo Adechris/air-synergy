@@ -1,7 +1,11 @@
 [build]
   command = "npm run build"
-  publish = ".output/public"
+  publish = "dist"
   functions = ".netlify/functions-internal"
+
+[functions]
+  included_files = ["dist/**"]
+  node_bundler = "esbuild"
 
 [[redirects]]
   from = "/*"
